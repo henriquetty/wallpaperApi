@@ -1,0 +1,17 @@
+{
+  "name": "wallpaperapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "startnm": "nodemon .",
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
