@@ -38,7 +38,7 @@ app.get("/wallpaper", (request, response) => {
   } else {
     getRandomImg().then((data) => {
       response.json({
-        url: `http://186.237.234.148:8080/wallpaper?img=${data}`,
+        url: `http://ip:8080/wallpaper?img=${data}`,
       });
     });
   }
