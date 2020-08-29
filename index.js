@@ -1,8 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const path = require("path");
-
-require("dotenv").config();
 
 const { returnSpecificImage, getRandomImg } = require("./utils/imagehandler");
 
@@ -38,7 +38,7 @@ app.get("/wallpaper", (request, response) => {
   } else {
     getRandomImg().then((data) => {
       response.json({
-        url: `http://ip:8080/wallpaper?img=${data}`,
+        url: `http://${process.env.IP}:8080/wallpaper?img=${data}`,
       });
     });
   }
